@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-grid">
+                <div class="name-grid">
+                    <h4><span>M</span>UHAMMAD</h4>
+                    <h5><span style="font-family: tangerine;">A</span>LI</h5>
+                </div>
+                <ul class="nav-items">
+                    <a href="#main-body">
+                        <li id="home" style="border: none;">HOME</li>
+                    </a>
+                    <a href="#about-sec">
+                        <li id="about">ABOUT ME</li>
+                    </a>
+                    <a href="#skills-sec">
+                        <li id="skills">SKILLS</li>
+                        <a href="#work-sec">
+                            <li id="projects">MY PROJECTS</li>
+                        </a>
+                        <a href="#contact-sec">
+                            <li id="contact">CONTACT ME</li>
+                        </a>
+                </ul>
+                <div class="hamburger-div" style="display: none;">
+                    <button onclick="ham_toggle()"><i class="fa fa-bars"></i>MENU</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="aside" style="display: none;">
+        <header><span>M</span>UHAMMAD</header>
+        <h4><span>A</span>LI</h4>
+
+        <ul class="aside-list">
+            <li><a href="#main-body" onclick="ham_close()">1. HOME</a></li>
+            <li><a href="#about-sec" onclick="ham_close()">2. ABOUT ME</a></li>
+            <li><a href="#skills-sec" onclick="ham_close()">3. SKILLS</a></li>
+            <li><a href="#work-sec" onclick="ham_close()">4. MY PROJECTS</a></li>
+            <li><a href="#contact-sec" onclick="ham_close()"    >5. CONTACT ME</a></li>
+        </ul>
+    </aside>
+
+    <section class="main-body" id="main-body" onclick="ham_close()">
+        <div class="overlay-main">
+            <div class="main-container">
+                <div class="main-grid">
+                    <div class="main-details">
+                        <h1>Hey, My Name Is: </h1>
+                        <header><span id="header-span">M</span>UHAMMAD ALI</header>
+                        <h4>| I'm A Front-End Web Developer |</h4>
+                        <a href="#about-sec"><button class="scroll-down-txt">SCROLL DOWN
+                                <i class="fa fa-arrow-down"></i></button></a>
+                    </div>
+
+                    <div style="text-align: right;">
+                        <img class="mypic" src="images/WhatsApp Image 2023-02-05 at 1.14.42 AM_1_11zon.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-sec" id="about-sec">
+        <div class="about-grid">
+            <div class="img-div" data-aos="flip-left" data-aos-duration="1000" data-aos-once="true">
+                <img class="mypic-2" src="images/WhatsApp Image 2023-02-05 at 1.32.42 AM_8_11zon.jpeg" alt="picture">
+            </div>
+            <div class="about-info-div">
+                <h1 class="about-header" data-aos="fade-up" data-aos-duration="1000"><span
+                        style="font-family: 'Montserrat'; padding-bottom: 7px; color: white;">ABOUT</span>
+                    ME</h1>
+                <div class="about-underline-div" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="about-header-underline"></div>
+                    <span><i class="fa fa-circle-o-notch"></i></span>
+                    <div class="about-header-underline"></div>
+                </div>
+                <p data-aos="fade-up" data-aos-duration="1000">Hey there!</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">My name is Ali and I'm a Front-End
+                    Web Developer having proficiency in HTML, CSS3 and
+                    JavaScript. Along with this, I'm doing my Bachelor in Computer Science from Mehran
+                    University. I'm a self-taught developer and I've made several web templates and themes e.g:
+                    WordPress themes, Color lib themes and have acquired strong commands on HTML and CSS. I'm
+                    still exploring about the JavaScript and its frameworks. Besides web development, I also
+                    have a good knowledge about the OOP concepts as I have worked on Java and C++.</p>
+                <p style="margin-top: 12px;" data-aos="fade-up" data-aos-duration="1000">That's all about me.</p>
+            </div>
+            <p class="page-num page-num-about" data-aos="fade-up" data-aos-duration="500">02.</p>
+        </div>
+    </section>
+
+    <section class="skills-sec" id="skills-sec" onclick="ham_close()">
+        <div class="skills-container">
+            <h1 class="skills-header" data-aos="fade-up" data-aos-duration="7000">My <span
+                    class="skills-header-span">Skills</span></h1>
+            <div class="skills-header-underline" data-aos="fade-up" data-aos-duration="700"></div>
+            <span><i class="fa fa-circle-o-notch" data-aos="fade-up" data-aos-duration="700"></i></span>
+            <div class="skills-header-underline" data-aos="fade-up" data-aos-duration="700"></div>
+            <div class="skills-grid">
+                <div class="expertise-sec" data-aos="flip-left" data-aos-duration="1000">
+                    <h1 class="expertise-header"><span class="expertise-header-span">My</span> Expertise in: </h1>
+                    <div class="expertise-underline"></div>
+                    <span><i class="fa fa-circle-o-notch expertise-underline-icon"></i></span>
+                    <div class="expertise-underline"></div>
+                    <div class="languages html5-div">
+                        <i class="fa fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="expertise-underline-margin">
+                        <div class="expertise-underline"></div>
+                        <span><i class="fa fa-circle-o-notch expertise-underline-icon"></i></span>
+                        <div class="expertise-underline"></div>
+                    </div>
+                    <div class="languages">
+                        <i class="fa fa-css3"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="expertise-underline-margin">
+                        <div class="expertise-underline"></div>
+                        <span><i class="fa fa-circle-o-notch expertise-underline-icon"></i></span>
+                        <div class="expertise-underline"></div>
+                    </div>
+                    <div>
+                        <div class="js-icon">JS</div>
+                        <p class="js-txt">JAVASCRIPT</p>
+                    </div>
+                </div>
+                <div class="skills-bars-div" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <p>HTML</p>
+                    <div class="container">
+                        <div class="skill html">85%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="container">
+                        <div class="skill css">75%</div>
+                    </div>
+                    <p>JAVASCRIPT</p>
+                    <div class="container">
+                        <div class="skill js">65%</div>
+                    </div>
+                    <p>JAVA</p>
+                    <div class="container">
+                        <div class="skill java">65%</div>
+                    </div>
+                </div>
+            </div>
+            <p class="page-num page-num-skills" data-aos="fade-up" data-aos-duration="500">03.</p>
+        </div>
+    </section>
+
+    <section class="work-sec" id="work-sec">
+        <div class="work-container">
+            <h1 class="work-header" data-aos="fade-up" data-aos-duration="500"><span class="work-header-span">MY</span>
+                WORK</h1>
+            <div class="work-underline-div" data-aos="fade-up" data-aos-duration="700" >
+                <div class="skills-header-underline"></div>
+                <span><i class="fa fa-circle-o-notch"></i></span>
+                <div class="skills-header-underline"></div>
+            </div>
+
+            <div class="work-grid" data-aos="fade-up" data-aos-duration="1000">
+                <div class="project-1 project" data-aos="flip-left" data-aos-duration="1000" data-aos-once="true">
+                    <img class="project1-img" src="images/jayden-sim-pQmlo0juG50-unsplash_3_11zon.jpg" alt="project1-img" >
+                    <div class="project-img-overlay project1-img-overlay"></div>
+                    <header><span>C</span>AFE THEME</header>
+                    <a href="https://aleee071.github.io/CafeTheme/" target="_blank"><button>CLICK HERE TO
+                            SEE</button></a>
+                </div>
+                <div class="project-2 project" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+                    <img class="project2-img" src="images/rhema-kallianpur-uocSnWMhnAs-unsplash_7_11zon.jpg" alt="project2-img">
+                    <div class="project-img-overlay project2-img-overlay"></div>
+                    <header><span>H</span>OTEL THEME</header>
+                    <a href="https://aleee071.github.io/HotelTheme/" target="_blank">
+                        <button>CLICK HERE TO SEE</button>
+                    </a>
+                </div>
+                <div class="project-3 project" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+                    <img class="project2-img project3-img" src="images/guilherme-petri-PtOfbGkU3uI-unsplash_2_11zon.jpg"
+                        alt="project3-img">
+                    <div class="project-img-overlay project3-img-overlay"></div>
+                    <header><span>S</span>aloon Theme</header>
+                    <a href="#">
+                        <button>CLICK HERE TO SEE</button>
+                    </a>
+                </div>
+            </div>
+            <p class="page-num" data-aos="fade-up" data-aos-duration="500">04.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container" id="contact-sec">
+            <div class="contact-sec">
+                <h1 class="contact-header" data-aos="fade-up" data-aos-duration="700"><span
+                        class="contact-span">CONNECT</span> WITH ME</h1>
+                <div class="contact-underline-div" data-aos="fade-up" data-aos-duration="700">
+                    <div class="contact-underline"></div>
+                    <span><i class="fa fa-circle-o-notch"></i></span>
+                    <div class="contact-underline"></div>
+                </div>
+
+                <div class="contact-grid" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="email-div">
+                        <i class="fa fa-envelope"></i>
+                        <h1 class="email-header">Email me at:</h1>
+                        <a class="email-anchor mail" href="mailto: alimustaf0001@gmail.com">alimustaf0001@gmail.com</a>
+                    </div>
+
+                    <div class="phone-div">
+                        <i class="fa fa-phone"></i>
+                        <h1 class="email-header">Call me at: </h1>
+                        <a class="email-anchor tel" href="tel: +923160315281">( +92 ) 316 0315281</a>
+                    </div>
+
+                    <div class="location-div">
+                        <i class="fa fa-map-marker"></i>
+                        <h1 class="email-header">Where to find me:</h1>
+                        <p class="email-anchor">Hyderabad, Latifabad, PK</p>
+                    </div>
+                </div>
+
+                <div class="ending-sec">
+                    <div class="ending-grid">
+                        <div class="left-grid">
+                            <p class="ending-txt">Designed by:</p>
+                            <div class="ending-header">
+                                <h1><span>M</span>uhammad</h1>
+                                <h2><span>A</span>li</h2>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/m.aleee071/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/muhammad-ali-4853b2260/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/Aleee071" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.upwork.com/freelancers/~011daeac7f54819cf0" target="_blank">
+                                <img src="images/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
+                                    alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
